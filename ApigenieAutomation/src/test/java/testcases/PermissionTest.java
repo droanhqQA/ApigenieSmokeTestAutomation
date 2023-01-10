@@ -45,7 +45,7 @@ public class PermissionTest extends Base_Class{
 
 	@BeforeMethod
 	public void setUp() throws IOException {
-		setUp();
+		BrowserSetUp();
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
