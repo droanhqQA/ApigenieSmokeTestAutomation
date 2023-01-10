@@ -608,7 +608,7 @@ public class AddingConnector  {
 		driver.findElement(By.xpath("//div[@id='scheme_type']")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		//driver.findElement(By.xpath("//div[@data-value='oauth_v2_pkce'][@class='item']")).click();
-		WebElement authv2=driver.findElement(By.xpath("//div[@data-value='oauth_v2_pkce'][@class='item']"));
+		WebElement authv2=driver.findElement(By.cssSelector("#scheme_type > div.menu.transition.visible > div:nth-child(8)"));
 		scrollTo(authv2);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		JavascriptExecutor executor =(JavascriptExecutor) driver;
