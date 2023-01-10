@@ -45,6 +45,7 @@ public class Base_Class {
 		options = new ChromeOptions();
 		options.addArguments("headless");
 		options.addArguments("window-size=1920,1080");
+		options.addArguments("remote-debugging-port=9222");
 		options.addArguments("incognito");
 		options.addArguments("disable-infobars");
 		options.setAcceptInsecureCerts(true);
