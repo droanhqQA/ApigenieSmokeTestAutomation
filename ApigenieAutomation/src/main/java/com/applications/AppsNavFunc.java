@@ -102,12 +102,14 @@ public class AppsNavFunc {
 		String title = driver.getTitle();
 		System.out.println(title+" ");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-	//	driver.findElement(By.xpath("//button[@class='sideshow-next-step-button']")).click();
+		driver.findElement(By.xpath("//button[@class='sideshow-next-step-button']")).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		/*
 		WebElement skipBtn = driver.findElement(By.xpath("//div[@class='skip-button']"));
 		new WebDriverWait(driver, Duration.ofSeconds(60))
 		.until(ExpectedConditions.elementToBeClickable(skipBtn));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", skipBtn);
+		*/
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
